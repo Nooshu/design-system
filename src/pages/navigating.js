@@ -471,7 +471,37 @@ const Page = () => (
       <ListItem>{`link the Barnardo's logo to the homepage`}</ListItem>
     </BulletedList>
     <Example>
-      <Header />
+      <Header
+        search={<Search />}
+        menu={
+          <Menu
+            items={[
+              {
+                text: "About us",
+                to: "/",
+                items: [
+                  {
+                    text: "Our history",
+                    to: "/"
+                  },
+                  {
+                    text: "Annual report",
+                    to: "/"
+                  }
+                ]
+              },
+              {
+                text: "What we do",
+                to: "/"
+              },
+              {
+                text: "Work with us",
+                to: "/"
+              }
+            ]}
+          />
+        }
+      />
     </Example>
     <Cite>
       {`View `}

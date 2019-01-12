@@ -7,6 +7,18 @@
   padding: 0.5rem 1rem;
 }
 
+.Header-skipLink {
+  position: absolute;
+  left: -100vw;
+  background: green;
+  color: white;
+
+  &:focus {
+    position: static;
+    width: 100%;
+  }
+}
+
 .Header-logo {
   grid-column: 1;
   grid-row: 1;
@@ -17,6 +29,24 @@
   height: 2.5rem;
 }
 
+.Header-search {
+  position: absolute;
+  left: -100vw;
+
+  &:focus-within {
+    position: static;
+  }
+}
+
+.Header-menu {
+  position: absolute;
+  left: -100vw;
+
+  &:focus-within {
+    position: static;
+  }
+}
+
 @media (min-width: 48rem) {
   .Header {
     padding: 1rem 2rem;
@@ -25,5 +55,13 @@
   .Header-logoInner {
     height: 3.5rem;
     width: 8rem;
+  }
+
+  .Header-search {
+    position: static;
+  }
+
+  .Header-menu {
+    position: static;
   }
 }
