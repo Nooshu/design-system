@@ -11,6 +11,11 @@
   padding: 0;
 }
 
+*:focus {
+  outline: 0.25rem solid color-mod(var(--orange) tint(30%));
+  outline-offset: 0;
+}
+
 /* stylelint-disable selector-max-type, property-whitelist */
 html {
   background: var(--white);
