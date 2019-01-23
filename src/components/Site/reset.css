@@ -12,7 +12,7 @@
 }
 
 *:focus {
-  outline: 0.25rem solid color-mod(var(--orange) tint(30%));
+  outline: 0.25rem solid var(--orange);
   outline-offset: 0;
 }
 
